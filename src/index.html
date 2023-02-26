@@ -3,12 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>🥝Choose Fruits🍋</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    
+    <!-- 🔥--  fonts  --🔥 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fraunces:opsz@9..144&family=Genos&family=Inter&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Rowdies:wght@300;400&family=Shantell+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <!-- 🔥--  header  --🔥 -->
+    <header class="header">
+      <div class="conteiner header-conteiner">
+        <nav class="nav header__nav">
+          <ul class="nav__menu list">
+            <li class="nav__item">
+              <a class="nav__link link nav__link--current" href="">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">About Fruits</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Recipes</a>
+            </li>
+          </ul>
+          <a class="logo link" href="#">
+            <img class="logo__img" src="./images/logo.png" alt="logo" width="100px">
+            <span class="logo__text">Fresh Fruits</span>
+          </a>
+          <button class="nav__btn-order" type="button">Order Now</button>
+        </nav>
+      </div>
+
+      <!-- 🔥--  line  --🔥 -->
+      <div class="line"></div>
+      <!-- <svg class="line">
+        <line x1="0" y1="20" x2="1600" y2="20" stroke="#2a2a2a" stroke-width="1" />
+      </svg> -->
+    </header>
+
+    <main>
+      <!-- 🔥--  hero  --🔥 -->
+      <section class="hero overlay">
+        <div class="hero__conteiner conteiner">
+          <div class="hero__group">
+            <h1 class="hero__title">Just Eat Fresh Fruits to live a healthier life</h1>
+            <p>Enjoy a healthy life by eating Fresh Fruits that have extraordinary flavors that make your life healthier for today and in the future</p>
+            <button  class="hero__btn" data-modal-open type="button">Order Now</button>
+          </div>
+          <img src="./images/main-section/hero-img.png" alt="fruits">
+          <!-- <img src="./images/main-section/hero-bgr-img.png" alt=""> -->
+        </div>
+      </section>
+
+      <!-- 🔥--  Why Choose US?  --🔥 -->
+      <section class="choose-us">
+        <div class="choose-us__conteiner conteiner">
+          <h2 class="choose-us__title"></h2>
+          <p class="choose-us__subtitle"></p>
+          <ul class="choose-us__list list">
+            <li class="choose-us__item">
+              <!-- <img class="choose-us__item-img" src="" alt=""> -->
+              <p class="choose-us__item-title">Easy to order</p>
+              <p class="choose-us__item-subtitle">foods include fresh produce, meats as well as processed</p>
+            </li>
+            <li class="choose-us__item">
+              <!-- <img class="choose-us__item-img" src="" alt=""> -->
+              <p class="choose-us__item-title">Live Order</p>
+              <p class="choose-us__item-subtitle">Place your online Order easily and get the food instantly</p>
+            </li>
+            <li class="choose-us__item">
+              <!-- <img class="choose-us__item-img" src="" alt=""> -->
+              <p class="choose-us__item-title">100% Organic</p>
+              <p class="choose-us__item-subtitle">Organic food is grown without the use of synthetic chemicals</p>
+            </li>
+          </ul>
+          <ul class="choose-us__list-facts list">
+            <li class="choose-us__fact">
+              <p class="choose-us__facts-num">40+</p>
+              Food Partners
+            </li>
+            <li class="choose-us__fact">
+              <p class="choose-us__facts-num">459+</p>
+              Trusted Clients
+            </li>
+            <li class="choose-us__fact">
+              <p class="choose-us__facts-num">12k+</p>
+              Order Online
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 🔥--  About US  --🔥 -->
+      <section class="about-us">
+        <div class="about-us__conteiner conteiner">
+          <div class="about-us__group">
+            <h2 class="about-us__title">About US</h2>
+            <p class="about-us__descr">Fresh produce means fruits and vegetables that have not been processed in any manner. This term does not include such items as nuts, herbs, popcorn, vegetable plants/seedlings, dried beans/peas, seeds/grains, and flowers.</p>
+            <button  class="about-us__btn-learn-more" type="button">Learn More</button>
+          </div>
+          <div class="about-us__img-block">
+            <!-- <img src="./images/main-section/hero-img.png" alt="fruits"> -->
+            <!-- <img src="./images/main-section/hero-bgr-img.png" alt=""> -->
+            <!-- <img src="./images/main-section/hero-img.png" alt="fruits"> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔥--  Recipes  --🔥 -->
+      <section class="recipes">
+        <div class="recipes__conteiner conteiner">
+          <div class="recipes__group">
+            <h2 class="recipes__title">Healthy eating recipe ideas</h2>
+            <p class="recipes__descr">Discover our best healthy recipes, including breakfasts, lunches, dinners and snacks. Find dishes to fit with special diets, from dairy-free and gluten-free to low carb and Keto.</p>
+            <button  class="recipes__btn-recipes" type="button">Choose a recipe</button>
+          </div>
+          <div class="recipes__img-block">
+            <!-- <img src="./images/main-section/hero-img.png" alt="fruits"> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 🔥--  Special Dishes  --🔥 -->
+      <section class="special-dishes">
+        <div class="special-dishes__conteiner conteiner">
+          <h2 class="special-dishes__title">Special Dishes for you</h2>
+          <p class="special-dishes__descr">Made with premium & 100% Organic ingredients</p>
+
+          <ul class="special-dishes__list list">
+            <li class="special-dishes__card">
+              <!-- <img class="special-dishes__card-img" src="" alt=""> -->
+              <p class="special-dishes__card-title">Strawberry-Mango Ice Cream</p>
+              <p class="special-dishes__card-descr">This fruit ice cream is a fast, frozen treat that doesn't lack quality. It is an easy 5-minute recipe to wow last-minute guests with.</p>
+            </li>
+            <li class="special-dishes__card">
+              <!-- <img class="special-dishes__card-img" src="" alt=""> -->
+              <p class="special-dishes__card-title">Watermelon Salad with Feta and Mint</p>
+              <p class="special-dishes__card-descr">This delicious, refreshing watermelon salad recipe is meant for hot summer days. With feta, avocado, mint & lime, it's the perfect mix of savory & sweet.</p>
+            </li>
+            <li class="special-dishes__card">
+              <!-- <img class="special-dishes__card-img" src="" alt=""> -->
+              <p class="special-dishes__card-title">Boozy Frozen Strawberry Lemonade</p>
+              <p class="special-dishes__card-descr">Try our easy recipe for homemade lemonade, using fresh strawberry juice and sugar. A simple classic that everyone can enjoy on a hot summer's day.</p>
+            </li>
+          </ul>
+          <button  class="special-dishes__btn-view-all-recipes" type="button">View All</button>
+        </div>
+      </section>
+
+      <!-- 🔥--  Happy Clients Says  --🔥 -->
+      <!-- <section class="clients">
+        <div class="clients__conteiner conteiner">
+            <h2 class="clients__title">Happy Clients Says</h2>
+            <ul>
+              <li>
+                <div>
+                  <img src="" alt="">
+                  <p></p>
+                </div>
+                <p></p>
+              </li>
+              <li></li>
+            </ul>
+        </div>
+      </section> -->
+
+      <!-- 🔥--  Subscribe  --🔥 -->
+      <section class="subscribe">
+        <div class="subscribe__conteiner conteiner">
+          <div class="subscribe__group">
+            <h3 class="subscribe__title">Subscribe to the Newsletter</h3>
+            <p class="subscribe__subtitle">Enter your email below to get our daily offers and news</p>
+            <input type="email" placeholder="Enter your email.">
+            <button  class="subscribe__btn-subscribe" type="button">Get Started</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 🔥--  Footer  --🔥 -->
+    <footer class="footer">
+      <div class="footer__conteiner conteiner">
+        <div class="footer__main">
+          <div>
+            <a class="logo link" href="#">
+              <img class="logo__img" src="./images/logo.png" alt="logo" width="100px">
+              <span class="logo__text">Fresh Fruits</span>
+            </a>
+            <span class="footer__slogan">Fresh Fruits makes me to do it again!</span>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__menu-list list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Service</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">About Fruits</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Recipes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <p class="footer__contacts-title">Contact Us</p>
+            <p class="footer__contacts-email">Email: <a class="footer__contacts-email-link link"href="mailto:info@fresh-fruits.biz">info@fresh-fruits.biz</a></p>
+            <ul class="footer__socials">
+              <!-- <li><img class="footer__socials-img" src="" alt=""></li> -->
+              <!-- <li><img class="footer__socials-img" src="" alt=""></li> -->
+              <!-- <li><img class="footer__socials-img" src="" alt=""></li> -->
+            </ul>
+          </div>
+        </div>
+        <p class="footer__license">© Copyright 2020 by ui.desk. All right reserved.</p>
+
+      </div>
+    </footer>
+
+
+
+
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
+ 
