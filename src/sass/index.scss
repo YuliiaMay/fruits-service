@@ -1,7 +1,9 @@
-@import './base/reset';
+
 @import './common';
 @import './example';
 @import './utils/conteiner';
-
+@import './utils/variables';
+@import './base/reset';
 
 @import './components/header';
+@import './components/hero.scss'

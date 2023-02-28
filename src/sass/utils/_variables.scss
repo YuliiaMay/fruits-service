@@ -1,30 +1,37 @@
 
 :root {
-    --brand-color-main: #2196f3;
-    --logo-second-color: #000000;
-    --often-text-color: #212121;
-    --second-text-color: #757575;
-    --light-text-color: #ffffff;
-    --second-text-light-color: #f5f4fa;
-    --socials-icon-color: #afb1b8;
+    --bgr-color: #fae0ee;
+    --title-text-color: #FF3A44;
+    --accent-text-color: #f59414;
+    --btn-text-color: #efd5e6;
+    // --title-text-color: #ab121a;
+    --menu-text-color: #FF0870;
+    // --main-text-color: #4d090c;
+    --main-text-color: #945707;
+    // --second-text-color: #757575;
+    // --light-text-color: #ffffff;
+    // --second-text-light-color: #f5f4fa;
+    // --socials-icon-color: #afb1b8;
 
     /*🌸background-color*/
-    --background-color-dark: #2f303a;
-    --background-color-light: #f5f4fa;
-    --background-color-modal: #ffffff;
-    --background-dark-trans: rgba(255, 255, 255, 0.1);
+    // --background-color-dark: #2f303a;
+    // --background-color-light: #f5f4fa;
+    // --background-color-modal: #ffffff;
+    // --background-dark-trans: rgba(255, 255, 255, 0.1);
+    --btn-bgr-color: #FF0870;
+    --second-btn-bgr-color: #f59414;
 
     /*🌸border*/
-    --border-color: #eeeeee;
-    --line-color: #ececec;
+    // --border-color: #eeeeee;
+    // --line-color: #ececec;
 
-    /*font*/
-    --text-main-font: Rowdies, cursive;
-    --font: Shantell Sans, ;
-    --font-cursive: Pacifico, cursive;
+    /*🌸font*/
+    --main-font: Dosis, sans-serif;
+    --title-font: Ubuntu, sans-serif;
+    --accent-font: Mountains of Christmas, sans-serif;
 
 
     /*🌸переходи*/
-    --transition-duration: 250ms;
+    --transition-duration: 320ms;
     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -4,35 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🥝Choose Fruits🍋</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    
+
     <!-- 🔥--  fonts  --🔥 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Fraunces:opsz@9..144&family=Genos&family=Inter&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Rowdies:wght@300;400&family=Shantell+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&family=Mountains+of+Christmas:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
+    <!-- 🔥--  css  --🔥 -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+
+  <body>
     <!-- 🔥--  header  --🔥 -->
     <header class="header">
       <div class="conteiner header-conteiner">
-        <nav class="nav header__nav">
-          <ul class="nav__menu list">
-            <li class="nav__item">
-              <a class="nav__link link nav__link--current" href="">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="">About Fruits</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="">Recipes</a>
-            </li>
-          </ul>
-          <a class="logo link" href="#">
-            <img class="logo__img" src="./images/logo.png" alt="logo" width="100px">
-            <span class="logo__text">Fresh Fruits</span>
-          </a>
-          <button class="nav__btn-order" type="button">Order Now</button>
+        <nav class="header__nav">
+          <div class="header__flex-block">
+            <ul class="nav__menu list">
+              <li class="nav__item">
+                <a class="nav__link link nav__link--current" href="">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Info</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Recipes</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Service</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="header__flex-block">
+            <a class="logo link" href="#">
+              <img class="logo__img" src="./images/logo-new.svg" alt="logo" width="300px">
+              <!-- <span class="logo__text">Fresh Fruits</span> -->
+            </a>
+          </div>
+          
+
+          <div class="header__btn-group header__flex-block">
+            <button class="nav__btn" type="button">🔍Сhoose</button>
+            <button class="nav__btn" type="button">🛒Cart</button>
+            <!-- <button class="nav__btn" type="button">Order Now</button> -->
+          </div>
+          
         </nav>
       </div>
 
@@ -45,14 +62,21 @@
 
     <main>
       <!-- 🔥--  hero  --🔥 -->
-      <section class="hero overlay">
-        <div class="hero__conteiner conteiner">
-          <div class="hero__group">
-            <h1 class="hero__title">Just Eat Fresh Fruits to live a healthier life</h1>
-            <p>Enjoy a healthy life by eating Fresh Fruits that have extraordinary flavors that make your life healthier for today and in the future</p>
-            <button  class="hero__btn" data-modal-open type="button">Order Now</button>
-          </div>
-          <img src="./images/main-section/hero-img.png" alt="fruits">
+      <section class="hero">
+        <div class="hero__conteiner conteiner overlay">
+          <!-- <div class="hero__group">
+            <h1 class="hero__title">Just eat<span class="hero__title-accent"> Fresh Fruits</span>  to live a happier life</h1>
+            <p class="hero__text">Enjoy a healthy life by eating Fresh Fruits that have extraordinary flavors that make your life happier for today and in the future</p>
+            
+            <div class="test-div hero__btn-conteiner">
+              <button class="hero__btn" type="button">Fruits</button>
+              <button class="hero__btn" type="button">Subscribe</button>
+              <button class="hero__btn" type="button">Order</button>
+            </div>
+          </div> -->
+
+
+          <!-- <img src="./images/main-section/hero-img.png" alt="fruits"> -->
           <!-- <img src="./images/main-section/hero-bgr-img.png" alt=""> -->
         </div>
       </section>

@@ -1,7 +1,7 @@
 body {
-    // background-color: var(--light-text-color);
-    font-family: var(--text-main-font);
-    // color: var(--often-text-color);
+    background-color: var(--bgr-color);
+    font-family: var(--main-font);
+    color: var(--main-text-color);
 }
 
 .link {
@@ -19,4 +19,12 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
 }

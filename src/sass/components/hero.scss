@@ -1,0 +1,101 @@
+.hero {
+    padding: 72px 0;
+}
+.overlay {
+    background-size: contain;
+    background-repeat: no-repeat;
+    // background-position: left;
+    background-position-x: right;
+    background-position-y: center;
+    // background-position-x: 100%;
+    // background-position-y: right;
+    // background-position-x: right;
+    margin-left: auto;
+    margin-right: auto;
+    height: 409px;
+    width: 500px; 
+    transform: rotate(315deg);
+
+    background-image: url(/src/images/main-section/hero-horizon.png);
+}
+// .hero__conteiner {
+// }
+// .conteiner {
+// }
+.hero__group {
+    width: 500px;
+    text-align: left;
+}
+.hero__title {
+    font-family: var(--title-font);
+    color: var(--title-text-color);
+    font-size: 54px;
+    font-weight: 500;
+    line-height: calc(72 / 54);
+}
+
+.hero__title-accent {
+    color: var(--accent-text-color);
+    font-family: var(--accent-font);
+    font-weight: 700;
+}
+.hero__text {
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: calc(34 / 24);
+}
+// .hero__btn {
+//     width: 200px;
+//     height: 64px;
+//     background-color: var(--second-btn-bgr-color);
+//     border: 1px solid #fceef4fb;
+//     border-radius: 20px;
+// }
+
+
+
+// test
+// .test-div {
+// }
+.hero__btn {
+    background-color: transparent;
+    border: 2px solid #f59414;
+    width: 100px;
+    height: 100px;
+    color: var(--menu-text-color);
+    font-size: 24px;
+
+    /*  властивості переходу  */
+    transition-property: border-radius, height, height, color, background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.hero__btn:first-child {
+    // border-radius: 90% 90% 90% 90%;
+    // border-radius: 50% 15% 5% 160%;
+    border-radius: 90%;
+    margin-right: 32px;
+}
+
+.hero__btn:nth-child(2) {
+    // border-radius: 10% 50% 50% 10%;
+    border-radius: 90%;
+    margin-right: 32px;
+}
+
+.hero__btn:last-child {
+    // border-radius: 2% 20% / 10% 40%;
+    border-radius: 90%;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background-color: #f59414;
+    color: var(--btn-text-color);
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    // border: 2px solid #f59414;
+}
