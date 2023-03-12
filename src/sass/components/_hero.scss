@@ -1,0 +1,84 @@
+.hero__container {
+    position: relative;
+}
+
+.hero__wrapper {
+    position: absolute;
+    z-index: -10;
+    background-size: contain;
+    width: 100%;
+    height: 695px;
+    background-repeat: no-repeat;
+    background-position: bottom 30px left 650px;
+    background-image: 
+        url(/src/images/main-section/hero-bgr-img.png),
+        url(/src/images/main-section/hero-img.png);
+}
+
+
+.hero__group {
+
+    z-index: 10;
+    width: 500px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 136px;
+    padding-bottom: 166px;
+    margin-right: 0;
+}
+
+
+.hero__title {
+    font-family: $title-font;
+    color: $title-text-color;
+    font-size: 54px;
+    font-weight: 500;
+    line-height: calc(72 / 54);
+    margin-bottom: 36px;
+}
+
+.hero__title-accent {
+    color: $accent-text-color;
+    font-family: $accent-font;
+    font-weight: 700;
+}
+
+.hero__text {
+    color: $main-text-color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: calc(34 / 24);
+    margin-bottom: 50px;
+}
+
+.hero__btn {
+    background-color: transparent;
+    border: 2px solid #f59414;
+    width: 100px;
+    height: 100px;
+    color: $menu-text-color;
+    font-size: 24px;
+    border-radius: 90%;
+    cursor: pointer;
+
+    /*  властивості переходу  */
+    transition-property: border-radius, height, width, color, background-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    &:not(:last-child) {
+        border-radius: 90%;
+        margin-right: 60px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #f59414;
+        color: $btn-text-color;
+        width: 150px;
+        height: 60px;
+        border-radius: 30px;
+        border: 2px solid $border-btn;
+    }
+}
+

@@ -1,9 +1,22 @@
-
-@import './common';
-@import './example';
-@import './utils/conteiner';
+// utils
+@import './utils/fonts';
 @import './utils/variables';
-@import './base/reset';
+@import './utils/mixins';
+@import './utils/common';
 
+
+// base
+@import './base/reset';
+@import './base/visually-hidden';
+@import './base/container';
+
+
+// components
 @import './components/header';
-@import './components/hero.scss'
+@import './components/hero.scss';
+@import './components/choose-us';
+@import './components/about-us';
+@import './components/recipes';
+@import './components/special-dishes';
+@import './components/subscribe';
+@import './components/footer';

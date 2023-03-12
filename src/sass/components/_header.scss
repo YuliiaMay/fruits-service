@@ -3,23 +3,25 @@
     width: auto;
     height: 0;
     border-bottom: 2px solid #FF0870;
+    margin-top: 30px;
 }
 
-.header-conteiner {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
 
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
 }
 
 .header__flex-block {
     width: calc((100% - 30px) / 2);
     justify-content: center;
+
 }
 
 .header__flex-block:last-child {
@@ -32,58 +34,42 @@
 
 .nav__menu {
     display: flex;
-    gap: 40px;
+    margin-right: 136px;
 }
 
 .nav__item {
-    color: var(--menu-text-color);
-    font-family: var(--title-font);
+    color: $menu-text-color;
+    font-family: $title-font;
     font-size: 18px;
     font-weight: 600;
     line-height: calc(24 / 18);
+
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
 }
 
-// .nav__link{
-//     font-family: var(--title-font);
-//     font-size: 18px;
-//     font-weight: 600;
-//     line-height: calc(24 / 18);
-// }
 
-// .nav__link--current {
-// }
-// .logo {
-// }
-// .logo__img {
-// }
-// .logo__text {
-// }
-// .nav__btn-order {
-// }
+.logo__img {
+    margin-right: 0;
+}
+
 
 .header__btn-group {
     display: flex;
     gap: 10px;
+    margin-left: 260px;
     // flex-direction: column;
 }
 
 .nav__btn {
     width: 130px;
     height: 40px;
-    background-color: var(--btn-bgr-color);
-    color: var(--btn-text-color);
-    font-family: var(--text-main-font);
+    background-color: $btn-bgr-color;
+    color: $btn-text-color;
+    font-family: $main-font;
     text-decoration: none;
     font-size: 20px;
     border: 1px solid #fceef4fb;
     border-radius: 20px;
-}
-
-
-.hero__title {
-    color: var(--title-text-color);
-}
-
-.hero__text {
-    color: var(--main-text-color);
 }
